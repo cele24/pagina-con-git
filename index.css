@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    margin: 0px auto;}
+header{
+    background: rgba(24, 22, 97, 0.897);
+    width: 100%; 
+    margin:0px;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+}
+nav{
+    margin: 0px auto;
+    width: 100%;
+    font-family: arial;
+}
+nav ul{
+    list-style: none; 
+}
+nav > ul{ 
+     /*solo se aplica para los que estan despues de la etiqueta nav*/
+width: 100%;
+background: rgba(69, 70, 73, 0.377);
+position:relative; 
+}
+nav > ul li{
+    display: table-cell ; /*para que los elementos li tenga una posición de celda*/
+}
+nav > ul li a{
+    color: rgb(255, 255, 255);
+    display: block;
+    line-height: 10px;
+    padding: 20px 70px;
+    position: relative;
+    text-decoration: none;
+}
+nav> ul li a:hover{
+    background: rgba(112, 99, 99, 0.856);
+}
+.img1{
+    width:50px;
+    float:right;
+    padding-right: 10px;
+}
+.slider{
+    width: 100%;
+    margin: auto;
+    float: center;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0px;
+    width: 400%;
+    animation: cambio 15s infinite;
+    animation-direction: alternate;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+    padding-bottom: 15px;
+}
+.slider img{
+    width: 100%;
+}
+@keyframes cambio{   /*paradas*/
+0%{margin-left: 0;}
+20%{margin-left: 0;}
+
+25%{margin-left: -100%;}
+45%{margin-left: -100%;}
+
+50%{margin-left: -200%;}
+70%{margin-left: -200%;}
+
+75%{margin-left: -300%;}
+100%{margin-left: -300%;}
+}
+h2{
+    color: white;
+    float: right;
+    display: block;
+    line-height: 10px;
+    padding: 20px 30px;
+}
+footer{
+    background: rgba(24, 22, 97, 0.897);
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
