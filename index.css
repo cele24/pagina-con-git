@@ -3,7 +3,9 @@
     padding: 0px;
 }
 #container{
-    margin: 0px auto;}
+    margin: 0px auto;
+    overflow: hidden;
+}
 header{
     background: rgba(24, 22, 97, 0.897);
     width: 100%; 
@@ -87,10 +89,23 @@ h2{
     line-height: 10px;
     padding: 20px 30px;
 }
+#slider2{
+    width: 1500px;
+    height: 150px;
+    background-image: url(diapositiva1.PNG);
+    background-size: 100% 100%;
+    animation: slider 10s infinite linear;
+
+}
 footer{
     background: rgba(24, 22, 97, 0.897);
     color: white;
     text-align: center;
     height: 50px;
     line-height: 50px;
+}
+@keyframes slider{
+    to{
+        background-position: 2000px;
+    }
 }
