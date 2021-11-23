@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <script >
+        window.alert("Registrese para acceder a descuentos, promociones y muchos beneficios.")
+    </script>
+    <div id="container">
+        <header>
+            <h1>CINE VISION </h1> 
+            </header>
+            <nav>
+                <ul ><img src="pochoclo.png" alt="" class="img1"> 
+                    <h2>CINE VISIÓN</h2>
+                    <li><a href="index.html">Home</a>  </li>
+                    <li><a href="estrenos.html"> Estrenos </a></li>
+                    <li><a href="entrada.html"> Registrarse </a></li>
+
+                </ul>
+    </div>
+        <section class="form-registro">
+        <form name="formulario" id="formulario" action="otro.html">
+         <h4>Formulario de registro:</h4>
+        <label for="fname">Nombre:</label><br>
+            <input class="estilo" type="text" name="ffname" id="ffname" autofocus><br>
+            <label for="llname" >Apellido:</label><br>
+            <input class="estilo" type="text" id="lname" name="llname"><br>
+        <label for="loc">localidad: </label><br>
+            <datalist id="lo">
+                <option value="San Francisco"></option>
+                <option value="Luján"></option>
+                <option value="Maipú"></option>
+                <option value="Mendoza"></option>
+                <option value="Merlo"></option>
+                <option value="Neuquén"></option>
+                <option value="Rosario"></option>
+            </datalist>
+            <input class="estilo" type="text" id="asfdgb" name="dfg" list="lo"><br>
+            <label for="llname">DNI:</label><br>
+            <input class="estilo" type="text" id="dnii" name="dnii"><br>
+            <label for="llname">Celular:</label><br>
+            <input class="estilo" type="search" id="numeroo" name="numeroo" placeholder="codigo de área + número"><br>
+            <label for="lname">Email:</label><br>
+            <input class="estilo" type="email" id="email" name="email" required><br>
+            <label for="llname">Contraseña:</label><br>
+            <input class="estilo" type="text" id="contra" name="contra"placeholder="Incluir mayúsculas y números"><br>
+            <script>
+                document.write("<p> Al registrarse acepta nuestros Términos y Condiciones</p>");
+            </script>
+            <input class="boton" type="submit" value="Registrar">
+            <button class="boton" onclick="document.write('error, valió el intento')">¿Ya tienes una cuenta? </button>
+        </form>
+    </section>
+</body>
+</html>
